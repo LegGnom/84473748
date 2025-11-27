@@ -1,19 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 
-const appHeight = () => {
-    const doc = document.documentElement
-    doc.style.setProperty('--app-height', `${window.innerHeight}px`)
-}
-window.addEventListener('resize', appHeight)
-appHeight()
-
 function App() {
+  const msg = Array.from({length: 100});
   return (
     <div className="App">
       <div className='header'>h1der</div>
       <div className='content'>
-        <div className='message'>Message</div>
+        {msg.map((_, i) => <div className='message' key={i}>
+          <span>Message {i}</span>
+        </div>)}
       </div>
       <div className='input' contentEditable="true">input</div>
     </div>
