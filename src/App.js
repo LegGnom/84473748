@@ -8,7 +8,7 @@ function App() {
       <div className='content'>
         <div className='message'>Message</div>
       </div>
-      <div className='input'>input</div>
+      <div className='input' contentEditable="true">input</div>
     </div>
   );
 }
