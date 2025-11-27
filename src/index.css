@@ -4,6 +4,7 @@
 
 html,
 body {
+  overscroll-behavior: none;
   height: var(--app-height);
   margin: 0;
   overflow: hidden;
